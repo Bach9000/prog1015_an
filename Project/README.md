@@ -1,2 +1,2 @@
-# info1221_template
+# Project
 Repository location where all student project work should go
