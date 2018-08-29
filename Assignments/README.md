@@ -1,2 +1,2 @@
-# info1221_template
+# Assignments
 Repository location where all student assignments should go
