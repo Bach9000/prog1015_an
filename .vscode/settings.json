@@ -3,6 +3,7 @@
     "files.autoSave": "onFocusChange",
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
-    "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
-    "pyqt-integration.qtdesigner.path": "C:\\Program Files (x86)\\Python36-32\\Lib\\site-packages\\pyqt5-tools\\designer.exe"
+    "python.pythonPath": "C:\\Program Files (x86)\\Python36-32\\python.exe",
+    "pyqt-integration.qtdesigner.path": "C:\\Program Files (x86)\\Python36-32\\Lib\\site-packages\\pyqt5-tools\\designer.exe",
+    "python.linting.enabled": false
 }
