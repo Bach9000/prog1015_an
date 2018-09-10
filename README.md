@@ -1,2 +1,2 @@
-# prog1015_template
-Basic shell structure of all student repos
+# Adrian Neumann's Repository
+Private Student Repository for PROG1015"
