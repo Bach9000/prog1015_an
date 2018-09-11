@@ -16,9 +16,9 @@ def main():
     balance = 100
 
     # Processing
-    balance += (balance*0.05 + 100)
-    balance += (balance*0.05 + 100)
-    balance += (balance*0.05)    
+    balance = (balance*1.05 + 100)
+    balance = (balance*1.05 + 100)
+    balance = (balance*1.05)    
 
     # Output
     print(round(balance,2))
