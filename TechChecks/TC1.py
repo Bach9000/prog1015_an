@@ -8,7 +8,8 @@ def main():
  
     # Input and Variables
     bill = float(input("Please enter your original bill amount: "))
-    
+    # tax = 0.15
+    # tip = 0.20
 
     # Processing
     tax = bill * 0.15
