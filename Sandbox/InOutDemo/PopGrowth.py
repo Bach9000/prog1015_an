@@ -9,7 +9,7 @@
 
 
 def main():
-    # Input and Variables
+     # Input and Variables
     Pop2000 = 281
     Pop2050 = 404
 
@@ -18,8 +18,9 @@ def main():
     PercentageGrowth = Pop2050/Pop2000
     
     # Output
-    print(round(PercentageGrowth)
-	
+  
+    print(round(PercentageGrowth))
+
     
 if __name__ == "__main__":
     main()
