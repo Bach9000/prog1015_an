@@ -20,7 +20,7 @@ def main():
     
     # Output
     print("Your original bill amount is: $ {:.2f}".format(bill))
-    print("Your tax is:  $ {:.2f}, and your tip is: $ {:.2f}".format(tax,tip))
+    print("Your tax is:  $ {:.2f},\n and your tip is: $ {:.2f}".format(tax,tip))
     print("Your total is: $ {:.2f}".format(total))	
     
     
