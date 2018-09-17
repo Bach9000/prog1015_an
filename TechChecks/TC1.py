@@ -8,6 +8,7 @@ def main():
  
     # Input and Variables
     bill = float(input("Please enter your original bill amount: "))
+    
     # tax = 0.15
     # tip = 0.20
 
@@ -18,10 +19,9 @@ def main():
     
     
     # Output
-    print("Your original bill amount is: " + str(bill))
-    print("Your tax is: " + str(tax))
-    print("Your tip is: " + str(tip))
-    print("Your total is: " + str(total))	
+    print("Your original bill amount is: $ {:.2f}".format(bill))
+    print("Your tax is:  $ {:.2f}, and your tip is: $ {:.2f}".format(tax,tip))
+    print("Your total is: $ {:.2f}".format(total))	
     
     
 if __name__ == "__main__":
