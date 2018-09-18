@@ -19,11 +19,21 @@ def main():
  
  
     # Input and Variables
+    print("""Weekly Loan Calculator
+                                                                           """)
+    LoanAmount = round(float(input("Enter the loan amount: $")),2)
+    PercentInterest = round(float(input("Enter the interest rate(%): ")),2)
+    PaymentYears = int(input("Enter the number of years: "))
     
     # Processing
+    Numerator = PercentInterest/5200
+    Denominator = (1-((1 +(Numerator))**(-52*PaymentYears))) 
+    CalculatedMonthlyPayment = (Numerator/Denominator) * LoanAmount
+    #WeeklyPayment = MonthlyPayment/4
     
-    # Output	
-    
+    # Output
+    print("\n")	
+    print("Your weekly payment will be: ${:.2f}".format(CalculatedMonthlyPayment))	
     
 if __name__ == "__main__":
     main()

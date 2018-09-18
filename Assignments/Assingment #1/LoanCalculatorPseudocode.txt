@@ -1,0 +1,7 @@
+1. Start Program.
+2. Prompt the user for the amount of the loan.
+3. Prompt the user for the interest rate.
+4. Prompt the user for the number of years.
+5. Calculate weekly payment.
+6. Display weekly payment to console.
+7. End Program.

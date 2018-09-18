@@ -18,10 +18,22 @@ def main():
  
  
     # Input and Variables
+    DeliveryCost = 15
+    Tax = 0.14
+    UserName = input("Please enter your name: ")
+    DeliveryDistance = float(input("Enter the total distance to deliver purchase of records: "))
+    PurchaseCost = round(float(input("Enter the purchase price of records: $")),2)
     
     # Processing
+    TotalDeliveryCost = DeliveryCost * DeliveryDistance
+    RecordPurchaseCost = PurchaseCost + PurchaseCost * Tax
+    TotalCost = TotalDeliveryCost + RecordPurchaseCost
     
-    # Output	
+    # Output
+    print("Purchase summary for: " + UserName)
+    print("Delivery cost: ${:.2f}".format(TotalDeliveryCost))
+    print("Purchase cost: ${:.2f}".format(RecordPurchaseCost))
+    print("Total cost: ${:.2f}".format(TotalCost))	
     
     
 if __name__ == "__main__":
