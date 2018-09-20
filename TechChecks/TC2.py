@@ -9,14 +9,14 @@ def main():
  
  
     # Input and Variables
+    ProvTax = 0.06
+    FedTax = 0.25
     print("Tax Withholding Calculator \n")
     WeeklySalary = round(float(input("Please enter the full amount of your weekly salary: ")),2)
     NumberOfDependents = int(input("How many dependents do you have?: "))
 
-    # Processing
-    ProvTax = 0.06
-    ProvTaxWithheld = WeeklySalary * ProvTax
-    FedTax = 0.25
+    # Processing    
+    ProvTaxWithheld = WeeklySalary * ProvTax    
     FedTaxWithheld = WeeklySalary * FedTax
     DeductionPerDependent = 0.02
     Deduction = DeductionPerDependent * NumberOfDependents * WeeklySalary
