@@ -4,9 +4,9 @@
 4. Prompt user for input name.
 5. Prompt user for number of kilometers delivery distance.
 6. Prompt user for cost of records.
-7. Calculate total delivery cost.
-8. Calculate cost of records after tax.
-9. Calculate total cost of purchase.
+7. Calculate total delivery cost: deliery cost per hour times distance.
+8. Calculate cost of records after tax: cost of tax on records plus cost of records.
+9. Calculate total cost of purchase: total delivery cost plus cost of records after tax.
 10. Display delivery cost.
 11. Display cost of records after tax.
 12. Display total cost of purchase.

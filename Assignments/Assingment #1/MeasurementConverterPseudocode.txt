@@ -3,8 +3,10 @@
 3. Prompt user for number stones.
 4. Prompt user for number of pounds.
 5. Promput user for number of ounces.
-6. Calculate total ounces: convert the total number of tons, stones, pounds, and ounces to ounces.
-7. Calculate total kilos: convert total ounces to kilos.
-8. Calculate total metric tons, kilos, and grams.
-9. Display total metric tons.
+6. Calculate total ounces: convert the total number of tons, stones, pounds, and ounces to ounces according to the formula provided.
+7. Calculate total kilos: convert total ounces to kilos according to the formula: total ounces / 35.274.
+8. Calculate total metric tons to the nearest integer according to the formula: Int(kilos/1000)
+9. Calculate the kilos in the remainder after step 8.
+10. Calculate total grams in the remainder after step 9.
+9. Display total metric tons, kilos and grams on one line.
 10. End Program. 
