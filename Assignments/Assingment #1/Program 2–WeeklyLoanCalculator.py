@@ -26,9 +26,9 @@ def main():
     PaymentYears = int(input("Enter the number of years: "))
     
     # Processing
-    Numerator = PercentInterest/5200
-    Denominator = (1-((1 +(Numerator))**(-52*PaymentYears))) 
-    CalculatedMonthlyPayment = (Numerator/Denominator) * LoanAmount
+    i = PercentInterest/5200
+    Denominator = (1-((1 +i)**(-52*PaymentYears))) 
+    CalculatedMonthlyPayment = (i/Denominator) * LoanAmount
     #WeeklyPayment = MonthlyPayment/4
     
     # Output
