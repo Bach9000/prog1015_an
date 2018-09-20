@@ -24,6 +24,7 @@ def main():
     TotalPay = WeeklySalary - TotalTaxWithheld
 
     # Output
+    print("\n")
     print("Provincial tax withheld: ${:.2f}".format(ProvTaxWithheld))
     print("Federal tax withheld: ${:.2f}".format(FedTaxWithheld))
     print("Dependent Deduction for 2 dependents: ${:.2f}".format(Deduction))
