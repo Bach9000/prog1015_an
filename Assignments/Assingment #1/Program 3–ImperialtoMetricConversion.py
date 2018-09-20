@@ -17,7 +17,7 @@ def main():
  
  
     # Input and Variables
-    
+    input
     # Processing
     
     # Output	

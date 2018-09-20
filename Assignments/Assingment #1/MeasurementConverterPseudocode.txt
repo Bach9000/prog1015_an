@@ -1,0 +1,10 @@
+1. Start Progam.
+2. Prompt user for number tons.
+3. Prompt user for number stones.
+4. Prompt user for number of pounds.
+5. Promput user for number of ounces.
+6. Calculate total ounces: convert the total number of tons, stones, pounds, and ounces to ounces.
+7. Calculate total kilos: convert total ounces to kilos.
+8. Convert total kilos to total metric tons.
+9. Display total metric tons.
+10. End Program. 
