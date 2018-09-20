@@ -17,10 +17,23 @@ def main():
  
  
     # Input and Variables
-    input
+    print("Imperial To Metric Conversion.\n")
+    Tons = int(input("Enter the number of tons: "))
+    Stones = int(input("Enter the number of stone: "))
+    Pounds = int(input("Enter the number of pounds: "))
+    Ounces = int(input("Enter the number of ounces: "))
+
     # Processing
+    TotalOunces = 35840 * Tons + 224 * Stones + 16 * Pounds + Ounces
+    TotalKilos = TotalOunces / 35.274
+    MetricTons = int(TotalKilos/1000)
+    Kilos = int(TotalKilos - MetricTons * 1000)
+    TotalGrams = float(TotalKilos * 1000)
+    Grams = TotalGrams - Kilos * 1000 - MetricTons * 1000000
     
-    # Output	
+    # Output
+    print("\n")
+    print("The metric weight is {:.0f} metric tons, {:.0f} kilos, and {:.1f} grams.".format(MetricTons, Kilos, Grams))	
     
     
 if __name__ == "__main__":

@@ -27,7 +27,7 @@ def main():
     print("\n")
     print("Provincial tax withheld: ${:.2f}".format(ProvTaxWithheld))
     print("Federal tax withheld: ${:.2f}".format(FedTaxWithheld))
-    print("Dependent Deduction for 2 dependents: ${:.2f}".format(Deduction))
+    print("Dependent Deduction for {:.0f} dependents: ${:.2f}".format(NumberOfDependents,Deduction))
     print("Total withheld: ${:.2f}".format(TotalTaxWithheld))
     print("Total Take-Home Pay: ${:.2f}".format(TotalPay))
 
