@@ -24,6 +24,7 @@ def main():
     UserName = input("Please enter your name: ")
     DeliveryDistance = float(input("Enter the total distance to deliver purchase of records: "))
     PurchaseCost = round(float(input("Enter the purchase price of records: $")),2)
+    print("\n")
     
     # Processing
     # Calculated delivery cost, purchase cost, and total cost
@@ -32,7 +33,7 @@ def main():
     TotalCost = TotalDeliveryCost + RecordPurchaseCost
     
     # Output
-    print("Purchase summary for: " + UserName)
+    print("Purchase summary for " + UserName)
     print("Delivery cost: ${:.2f}".format(TotalDeliveryCost))
     print("Purchase cost: ${:.2f}".format(RecordPurchaseCost))
     print("Total cost: ${:.2f}".format(TotalCost))	
