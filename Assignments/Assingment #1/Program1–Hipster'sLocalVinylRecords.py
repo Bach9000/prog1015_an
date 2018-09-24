@@ -18,6 +18,7 @@ def main():
  
  
     # Input and Variables
+    # Collect distance to deliver and purchase cost of records from user
     DeliveryCost = 15
     Tax = 0.14
     UserName = input("Please enter your name: ")
@@ -25,6 +26,7 @@ def main():
     PurchaseCost = round(float(input("Enter the purchase price of records: $")),2)
     
     # Processing
+    # Calculated delivery cost, purchase cost, and total cost
     TotalDeliveryCost = DeliveryCost * DeliveryDistance
     RecordPurchaseCost = PurchaseCost + PurchaseCost * Tax
     TotalCost = TotalDeliveryCost + RecordPurchaseCost
