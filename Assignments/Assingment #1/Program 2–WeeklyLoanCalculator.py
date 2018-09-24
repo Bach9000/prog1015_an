@@ -19,6 +19,7 @@ def main():
  
  
     # Input and Variables
+    # Collect loan amount, percent interest, and payment years from user
     print("""Weekly Loan Calculator
                                                                            """)
     LoanAmount = round(float(input("Enter the loan amount: $")),2)
@@ -26,10 +27,10 @@ def main():
     PaymentYears = int(input("Enter the number of years: "))
     
     # Processing
+    # Calculate monthly payment according to formula provided
     i = PercentInterest/5200
     Denominator = (1-((1 +i)**(-52*PaymentYears))) 
     CalculatedMonthlyPayment = (i/Denominator) * LoanAmount
-    #WeeklyPayment = MonthlyPayment/4
     
     # Output
     print("\n")	

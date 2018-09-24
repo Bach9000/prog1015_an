@@ -17,6 +17,7 @@ def main():
  
  
     # Input and Variables
+    # Collect weights from user in imperial Tons, Stones, Pounds, and Ounces
     print("Imperial To Metric Conversion.\n")
     Tons = int(input("Enter the number of tons: "))
     Stones = int(input("Enter the number of stone: "))
@@ -24,6 +25,7 @@ def main():
     Ounces = int(input("Enter the number of ounces: "))
 
     # Processing
+    # Convert imperial weights to Metric Tons, Kilos, and Grams
     TotalOunces = 35840 * Tons + 224 * Stones + 16 * Pounds + Ounces
     TotalKilos = TotalOunces / 35.274
     MetricTons = int(TotalKilos/1000)

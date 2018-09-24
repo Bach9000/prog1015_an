@@ -8,5 +8,5 @@
 8. Calculate total metric tons to the nearest integer according to the formula: Int(kilos/1000)
 9. Calculate the kilos in the remainder after step 8.
 10. Calculate total grams in the remainder after step 9.
-9. Display total metric tons, kilos and grams on one line.
-10. End Program. 
+11 Display total metric tons, kilos and grams on one line.
+12. End Program. 
