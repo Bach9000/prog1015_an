@@ -9,7 +9,7 @@
 #1.Hard code price of oranges per pound variable
 #2.Hard code flat rate shipping price variable
 #3.Collect total order quantity of oranges from user
-#4.If the total quantity of oranges ordered is equal to or greater than 100 pounds, go to step 5, else go to step 6
+#4.If the total quantity of oranges ordered is equal to or greater than 100 pounds, go to step 5, or if not, go to step 6
 #5.Calculate the adjusted total order price by multiplying the order quantity from step 3 by the value from step 1 and then adding the value from step 2 minus $1.50
 #6.Calculte the total order price by multiplying the order quantity from step 3 by the value from step 1 and then adding the value from step 2
 #7.Display the total order price for a given quantity of oranges weighed in pounds. 
