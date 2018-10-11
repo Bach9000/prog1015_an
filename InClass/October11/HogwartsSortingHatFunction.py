@@ -4,7 +4,7 @@
 
 from random import randint
 
-def SortingHat(in_Name):
+def assignHouse(in_Name):
 
     Number = 0
     LastName = in_Name
