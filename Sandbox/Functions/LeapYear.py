@@ -3,7 +3,6 @@
 # Description: This program will determine whether the input year is a leap year.  
 # If the year is evenly divisible by 400 or 4 and not by 100, it is a leap year
 
-#def LeapYear(in_year)
 
 def DetermineLeapYear(in_year): 
 
