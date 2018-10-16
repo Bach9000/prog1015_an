@@ -38,6 +38,7 @@ def main():
     
     Name = input("""Please enter your last name, to get assigned to a House
     first letter capital followed by one or more letters lower case:  """ )
+    print("")
     
    
    # Validation & Processing & Output
