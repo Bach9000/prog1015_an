@@ -10,9 +10,8 @@ def CalculateGPA(in_courseName):
     numericGrade = 0.0
   
     letterGrade = input("Please enter a letter grade for {} : ".format(in_courseName)).upper()
-    modifier = input("Please enter a modifier (+, - or nothing) : ")
-    input("")
-
+    modifier = input("Please enter a modifier (+, - or nothing) : ").
+    
 
     # Determine base numeric value of the grade
     if letterGrade == "A":
