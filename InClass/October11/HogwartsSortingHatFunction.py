@@ -6,7 +6,7 @@ from random import randint
 import re
 import sys
 
-def assignHouse(in_Name):
+def AssignHouse(in_Name):
 
     Number = 0
     LastName = in_Name
@@ -44,7 +44,7 @@ def main():
    # Validation & Processing & Output
 
     if NamePatternMatch.fullmatch(Name):
-        print("{0} has been assigned to House {1}".format(Name,assignHouse(Name)))	
+        print("{0} has been assigned to House {1}".format(Name,AssignHouse(Name)))	
     else:
         print("Last name does not match pattern!")
         SystemExit()   
