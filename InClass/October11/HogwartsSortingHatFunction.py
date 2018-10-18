@@ -37,7 +37,7 @@ def main():
     NamePatternMatch = re.compile('[A-Z][a-z]+')
     
     Name = input("""To get assigned to a House, please enter your last name: 
-    first letter capital followed by one or more letters lower case:  """ )
+    first letter capitalized followed by one or more letters lower case:  """ )
     print("")
     
    
