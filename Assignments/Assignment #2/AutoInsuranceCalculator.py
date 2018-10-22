@@ -110,7 +110,7 @@ def main():
     if IsDriver and IsPerson:
         Premium = DetermineInsurancePremium(Sex,PayeeAge,VehiclePrice)
     else:
-        print("You are not a driver!")
+        print("You are not insurable!")
         SystemExit() 
     
     #Output
