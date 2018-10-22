@@ -4,18 +4,7 @@
 # If the year is evenly divisible by 400 or 4 and not by 100, it is a leap year
 
 
-def DetermineLeapYear(in_year): 
-
-    Year = in_year
-   
-    if (Year % 4 == 0 and Year % 100 != 0): 
-        return True
-    elif (Year % 400 == 0): 
-        return True
-    else:
-        return False
-
-
+from modules import DetermineLeapYear
    
    
 def main():

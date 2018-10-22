@@ -16,20 +16,31 @@
 #
 
 
+import sys
+
 def main():
  
  
     # Input and Variables
     OrangePricePerPound = 1.99
     FlatShippingRate = 7.50
-    TotalPoundsOrange = int(input("Please enter the total quantity of oranges ordered in Lbs: "))
+    TotalPoundsOrange = (input("Please enter the total quantity of oranges ordered in Lbs: "))
     
-    
+    if TotalPoundsOrange.isdigit():
+        OrangeInt = True
+        
+    else:
+        print("Total pounds oranges incorrect format!")
+        SystemExit()
+
     
     # Processing
-    if TotalPoundsOrange >= 100:
-        TotalOrderPrice = TotalPoundsOrange * OrangePricePerPound + FlatShippingRate - 1.50
-    TotalOrderPrice = TotalPoundsOrange * OrangePricePerPound + FlatShippingRate 
+
+    if OrangeInt:
+        if TotalPoundsOrange >= 100:
+            TotalOrderPrice = TotalPoundsOrange * OrangePricePerPound + FlatShippingRate - 1.50
+        else:
+            TotalOrderPrice = TotalPoundsOrange * OrangePricePerPound + FlatShippingRate 
     
 
 
