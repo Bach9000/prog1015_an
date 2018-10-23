@@ -89,6 +89,8 @@ def main():
 
 
     #Input and Variable
+
+    # Collect gender, age and vehicle price from the user
     Sex = input("Are you 'Male' or 'Female': ").upper()
     print("")
     PayeeAge = ValidateAge(input("Enter your age: "))
@@ -107,14 +109,18 @@ def main():
     if PayeeAge >= 15 or PayeeAge < 70:
             IsDriver = True
     
+    # If gender and age boolean variables are true, call calculate insurance premium function,
+    # else print warning message and exit gracefully
     if IsDriver and IsPerson:
         Premium = DetermineInsurancePremium(Sex,PayeeAge,VehiclePrice)
     else:
+        print("")
         print("You are not insurable!")
         SystemExit() 
     
     #Output
-          
+
+    # Print formatted insurance premium      
     print("")
     print("Your monthly insurance will be ${:.2f}".format(Premium))
    
