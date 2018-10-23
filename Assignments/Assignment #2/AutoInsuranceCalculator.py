@@ -122,7 +122,7 @@ def main():
     
     #Output
 
-    # Print formatted insurance premium      
+    # Print formatted insurance premium calculation      
     print("")
     print("Your monthly insurance will be ${:.2f}".format(Premium))
    

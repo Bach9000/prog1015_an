@@ -31,6 +31,7 @@ def ValidateData(in_Mb):
     if TestMb.fullmatch(in_Mb):
         return int(in_Mb)
     else:
+        print("")
         print("Invalid numeric input!")
         sys.exit()
 
