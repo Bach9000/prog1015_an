@@ -41,6 +41,7 @@ def PlanCalculation(in_data):
 
     Mb = in_data
 
+    # Calculate cost of data plan according to data usage
     if Mb <= 200:
         Cost = 20.00
     elif Mb > 200 and Mb <= 500:

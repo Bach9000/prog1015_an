@@ -36,6 +36,7 @@ def ValidateAge(in_age):
     if TestAge.fullmatch(in_age):
         return int(in_age)
     else:
+        print("")
         print("Invalid numeric input!")
         sys.exit()
 
@@ -50,6 +51,7 @@ def ValidatePrice(in_price):
     if TestAge.fullmatch(in_price):
         return int(in_price)
     else:
+        print("")
         print("Invalid numeric input!")
         sys.exit()
     
