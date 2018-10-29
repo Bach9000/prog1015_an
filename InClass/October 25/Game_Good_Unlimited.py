@@ -15,11 +15,10 @@ def main():
 	# Processing
 	
     # Begin loop to guess the Target random number
-    while(Guess!=Target):
+    while(Guess != Target):
     	
         # Collect guess from user
         Guess = int(input("Enter a number: "))
-    	
 		# Determine whether guess is higher or lower than the target or is a hit
         if Guess < Target:
     		
