@@ -7,42 +7,42 @@ def main():
  
    
    # Initialize variables
-    NumberOne = 0
-    NumberTwo = 0
-    ContinueToCalculate = "Y"
+   One = 0
+   Two = 0
+   NumberOne = ""
+   NumberTwo = ""
+   ContinueToCalculateOuter = True
+   ContinueToCalculateInner = True
 
-    while ContinueToCalculate == "Y":
-        
-        # Initialize variables
-    
-        NumberOne = input("Please enter a first integer!")
-        
-        
-        # Input
-        if NumberOne.isdigit() == False: 
-            NumberOne = input("Incorrect input! Please enter a first integer: ")
-        else:
-            One = int(NumberOne)
-        
-        NumberTwo = input("Pleaes enter a second intger!")
+   # Processing
+   while ContinueToCalculateOuter:
+
+       if NumberTwo.isdigit() == False:
+           print("")
+
+           NumberOne = input("Please enter a first integer!")
+
+           if NumberOne.isdigit():
+               One = int(NumberOne)
+
+               while ContinueToCalculateInner:
+
+                   print("")
+                   NumberTwo = input("Please enter a second integer!")
+
+                   if NumberTwo.isdigit():
+                       Two = int(NumberTwo)
+                       ContinueToCalculateInner = False
+
+                   # Processing & Output
+                   if NumberOne.isdigit() and NumberTwo.isdigit():
+                       Sum = One + Two
+                       print("")
+                       print("The sume of the first and second integer is: {0}".format(Sum))
+                       ContinueToCalculateOuter = False
 
 
 
-        if NumberTwo.isdigit() == False: 
-            NumberTwo = input("Incorrect input! Please enter a second integer: ")
-        else:
-            Two = int(NumberTwo)
-        
-        
-               
-        # Processing
-        Sum = One + Two
-        
-        # Output	
-        
-        print("The sume of the first and second integer is: {0}".format(Sum))
-        print("")
-        ContinueToCalculate = input("Do you want to continue? Enter 'Y/y' to continue or 'N/n' to quit: ").upper()
 
 
 
