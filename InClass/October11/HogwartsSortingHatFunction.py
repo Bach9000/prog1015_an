@@ -6,36 +6,7 @@ from random import randint
 import re
 import sys
 
-def CountStudents(in_house_name):
-    
-    # Variables
-    HouseTotal = 0
-    Gryffindor = 0
-    Hufflepuff = 0
-    Ravenclaw = 0
-    Slytherin = 0
 
-    HouseName = in_house_name
-    
-    # Processing
-
-    if HouseName == "Gryffindor":
-        Gryffindor = Gryffindor + 1
-        return Gryffindor    
-    
-    elif HouseName == "Hufflepuff":
-        Hufflepuff = Hufflepuff + 1
-        return Hufflepuff    
-    
-    elif HouseName == "Ravenclaw":
-        Ravenclaw = Ravenclaw + 1
-        return Ravenclaw
-    
-    elif HouseName == "Slytherin":
-        Slytherin = Slytherin + 1
-        return Slytherin
-
-  
 
 def AssignHouse(in_Name):
 
@@ -67,13 +38,18 @@ def main():
     # Input and Variables
     NamePatternMatch = re.compile('[A-Z][a-z]+')
     Name = ""
-    HouseGryffindor = 0
-    HouseHufflepuff = 0
-    HouseRavenclaw = 0
-    HouseSlytherin = 0
+
+    GryfStudents = []
+    HufStudents = []
+    RavStudents = []
+    SlythStudents = []
+    
+
 
 
     while Name != "q":
+
+
         print("")
         Name = input("""To get assigned to a House, please enter your last name: 
         first letter capitalized followed by one or more letters lower case. Enter 
@@ -85,36 +61,60 @@ def main():
 
         if NamePatternMatch.fullmatch(Name):
             AssignedHouse = AssignHouse(Name)
-            print("{0} has been assigned to House {1}".format(Name,AssignedHouse))	
-
+           # print("{0} has been assigned to House {1}".format(Name,AssignedHouse))
             if AssignedHouse == "Gryffindor":
-                HouseGryffindor = HouseGryffindor + 1
-            elif AssignedHouse == "Slytherin":  
-                HouseSlytherin = HouseSlytherin  + 1
-                
+                GryfStudents.append(Name)
+               # GryfTotal = GryfTotal + 1
             elif AssignedHouse == "Hufflepuff":
-                HouseHufflepuff = HouseHufflepuff + 1
+                HufStudents.append(Name)
             elif AssignedHouse == "Ravenclaw":
-                HouseRavenclaw = HouseRavenclaw + 1
-                       
-            # if Name == "q":
-            #     print("")
-            #     print("There are {0} students in House Gryffindor, {1} students in House Hufflepuff,".format(HouseGryffindor,HouseHufflepuff)) 
-            #     print("{0} students in House Ravenclaw, and {1} students in House Slytherin".format(HouseRavenclaw,HouseSlytherin))
-        
+                RavStudents.append(Name)
+            elif AssignedHouse == "Slytherin":
+                SlythStudents.append(Name)
 
-            
-            
+
+           
+
         elif Name == "q":
-            print("")
-            print("There are {0} students in House Gryffindor, {1} students in House Hufflepuff,".format(HouseGryffindor,HouseHufflepuff)) 
-            print("{0} students in House Ravenclaw, and {1} students in House Slytherin".format(HouseRavenclaw,HouseSlytherin))
+            
+            
+            for GryfNames in range (len(GryfStudents)):
+                print(GryfStudents[GryfNames])
+            
+            print("{0} Are assigned to House Gryffindor".format(len(GryfStudents)))
+
+            print("")    
+            for HufNames in range (len(HufStudents)):
+                print(HufStudents[HufNames])
+            
+            print("{0} Are assigned to House Hufflepuff".format(len(HufStudents)))
+
+            print("")    
+            for RavNames in range (len(RavStudents)):
+                print(RavStudents[RavNames])
+            
+            print("{0} Are assigned to House Ravenclaw".format(len(RavStudents)))
+
+            print("")    
+            for GryfNames in range (len(SlythStudents)):
+                print(SlythStudents[GryfNames])
+            
+            print("{0} Are assigned to House Slytherin".format(len(SlythStudents)))
+                
+
+             
+            
+                
+           # print("There are {0} students in House Gryffindor, {1} students in House Hufflepuff,".format(GryfTotal,HufTotal))
+           # print("{0} students in House Ravenclaw, and {1} students in House Slytherin".format(RavTotal,SlythTotal))
             sys.exit()
         else:
             print("Last name does not match pattern!")
     
 
-    print("")
+    
+       
+   
     
 if __name__ == "__main__":
     main()
